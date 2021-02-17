@@ -4,8 +4,10 @@
   </head>
   <body>
     <script language='javascript'>
-      
-        alert("foo");
+        function fn() {
+          alert("foo");
+        }
+        document.body.addEventListener('click', fn, true); 
       
     </script>
     <h1>Hello world!</h1>
