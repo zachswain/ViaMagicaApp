@@ -5,11 +5,13 @@
   <body>
     <script language='javascript'>
         function fn() {
-          alert("foo");
+          var el=document.getElementById("animus");
+          var rnd=Math.floor(Math.random()*23);
+          el.innerHTML("" + rnd);
         }
         document.body.addEventListener('click', fn, true); 
       
     </script>
-    <h1>Hello world!</h1>
+    <div id="animus"></div>
   </body>
 </html>
