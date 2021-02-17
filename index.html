@@ -7,7 +7,28 @@
         function fn() {
           var el=document.getElementById("animus");
           var rnd=Math.floor(Math.random()*23);
-          el.innerHTML="" + rnd;
+          if( rnd<6 ) {
+            // Air
+            el.innerHTML="Air";
+          } else if( rnd<11 ) {
+            // Water
+            el.innerHTML="Water";
+          } else if( rnd<15 ) {
+            // Earth
+            el.innerHTML="Earth";
+          } else if( rnd<18 ) {
+            // Life
+            el.innerHTML="Life";
+          } else if( rnd<20 ) {
+            // Fire
+            el.innerHTML="Fire";
+          } else if( rnd<21 ) {
+            // Shadow
+            el.innerHTML="Shadow";
+          } else {
+            // Wildcard
+            el.innerHTML="Wild";
+          }
         }
         document.body.addEventListener('click', fn, true); 
       
