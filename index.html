@@ -25,10 +25,12 @@
       function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
       }
+      
       async function fn() {
         for(i=0 ; i<10 ; i++) {
           rotate();
-          await sleep(100);
+          async sleep(100);
+        }
       }
       
       function rotate() {
