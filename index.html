@@ -1,6 +1,15 @@
 <html>
   <head>
     <link rel="shortcut icon" type="image/jpg" href="https://zachswain.github.io/ViaMagicaApp/viamagica.jpg"/>
+    <style>
+      .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <script language='javascript'>
@@ -33,6 +42,6 @@
         document.body.addEventListener('click', fn, true); 
       
     </script>
-    <div id="animus"></div>
+    <div id="animus" class="#centered"></div>
   </body>
 </html>
