@@ -4,7 +4,6 @@
     <style>
       body {
         background-color: #000000;
-        background-image: url("./fire.png");
         background-repeat:no-repeat;
         background-position: center center;
         background-size: 200px 200px;
@@ -24,6 +23,7 @@
   <body>
     <script language='javascript'>
         function fn() {
+          var body=document.body;
           var el=document.getElementById("animus");
           var rnd=Math.floor(Math.random()*23);
           if( rnd<6 ) {
@@ -41,6 +41,7 @@
           } else if( rnd<20 ) {
             // Fire
             el.innerHTML="Fire";
+            body.style.backgroundImage = "url('./fire.png')";
           } else if( rnd<21 ) {
             // Shadow
             el.innerHTML="Shadow";
